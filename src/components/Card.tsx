@@ -7,11 +7,13 @@ export const Card = ({ children, title }: { children: React.ReactNode; title?: s
     <div style={{
       backgroundColor: '#fafafa',
       border: '1px solid #e0e0e0',
-      borderRadius: '8px',
-      padding: '23px', // DRIFT: Arbitrary spacing
-      marginBottom: '17px', // DRIFT: Arbitrary margin
+      borderRadius: '11px',
+      padding: '29px',
+      marginBottom: '17px',
+      minHeight: '185px',
+      maxWidth: '472px',
     }}>
-      {title && <h3 style={{ color: '#333333', fontSize: '18px', marginBottom: '13px' }}>{title}</h3>}
+      {title && <h3 style={{ color: '#333333', fontSize: '19px', marginBottom: '14px' }}>{title}</h3>}
       {children}
     </div>
   );
