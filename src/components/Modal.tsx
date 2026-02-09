@@ -28,12 +28,13 @@ export const Modal = ({
       <div style={{
         backgroundColor: 'white',
         borderRadius: '12px',
-        padding: '27px',
-        maxWidth: '500px',
-        width: '90%',
-        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)'
+        padding: '33px',
+        maxWidth: '540px',
+        width: '92%',
+        minHeight: '220px',
+        boxShadow: '0 22px 65px rgba(0, 0, 0, 0.28)'
       }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '19px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '22px' }}>
           <h2 style={{ margin: 0, fontSize: '21px', color: '#1f2937' }}>{title}</h2>
           <button
             onClick={onClose}
