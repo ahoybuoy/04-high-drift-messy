@@ -47,7 +47,10 @@ export const BannerAlert = ({ children }: { children: React.ReactNode }) => (
 );
 
 export const InlineAlert = ({ text, icon }: { text: string; icon?: string }) => (
-  <span className="inline-flex items-center gap-[6px] text-[#dc2626] text-[12px]">
+  <span
+    className="inline-flex items-center gap-[6px] text-[12px]"
+    style={{ color: '#dc2626', borderBottom: '2px solid #ef4444' }}
+  >
     {icon && <span>{icon}</span>}
     {text}
   </span>
